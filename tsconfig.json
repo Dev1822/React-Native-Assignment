@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "app/(tabs)/survey.jsx"  ]
+, "app/(tabs)/survey.jsx", "app/(drawer)/clipboard.jsx", "app/(drawer)/camera.jsx", "app/(drawer)/contacts.jsx", "app/(drawer)/location.jsx", "app/(drawer)/settings.jsx", "app/context/SurveyContext.jsx", "app/survey-preview.jsx", "app/(drawer)/(tabs)/history.jsx", "app/(drawer)/(tabs)/profile.jsx", "app/(drawer)/(tabs)/survey.jsx"  ]
 }
