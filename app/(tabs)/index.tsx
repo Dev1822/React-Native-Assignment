@@ -7,8 +7,11 @@ import {
   Pressable,
 } from "react-native";
 import React from "react";
+import { useRouter } from 'expo-router';
 
 const Index = () => {
+  const router = useRouter();
+
   const students = [
     { Name: "ABC", Roll: 1, Course: "BE in CE" },
     { Name: "DEF", Roll: 2, Course: "BE in CE" },
@@ -65,7 +68,7 @@ const Index = () => {
       <Text style={styles.heading}>Quick Actions</Text>
 
       <View style={styles.row}>
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button} onPress={()=>router.push("/survey")}>
           <Text style={styles.buttonText}>New Survey</Text>
         </Pressable>
 
