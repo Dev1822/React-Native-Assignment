@@ -27,18 +27,6 @@ export default function Profile() {
 
         <View style={styles.divider} />
 
-        <View style={styles.statsRow}>
-          <View style={styles.stat}>
-            <Text style={styles.statValue}>12</Text>
-            <Text style={styles.statLabel}>Total Surveys</Text>
-          </View>
-          <View style={styles.statDivider} />
-          <View style={styles.stat}>
-            <Text style={styles.statValue}>4</Text>
-            <Text style={styles.statLabel}>This Week</Text>
-          </View>
-        </View>
-
         <Pressable style={styles.editButton} onPress={() => router.push('/(drawer)/settings')}>
           <Text style={styles.editButtonText}>Edit Profile</Text>
         </Pressable>
@@ -105,30 +93,7 @@ const styles = StyleSheet.create({
     width: '100%',
     marginBottom: 24,
   },
-  statsRow: {
-    flexDirection: 'row',
-    width: '100%',
-    justifyContent: 'space-around',
-    marginBottom: 32,
-  },
-  stat: {
-    alignItems: 'center',
-  },
-  statValue: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: Colors.text,
-    marginBottom: 4,
-  },
-  statLabel: {
-    fontSize: 14,
-    color: Colors.textMuted,
-  },
-  statDivider: {
-    width: 1,
-    backgroundColor: Colors.border,
-    height: '100%',
-  },
+
   editButton: {
     backgroundColor: Colors.surface,
     borderWidth: 1,
